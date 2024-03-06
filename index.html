@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Voxify</title>
+
+        <link rel="preconnect" 
+                href="https://fonts.googleapis.com">
+        <link rel="preconnect" 
+                href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+                rel="stylesheet">
+        <link rel="stylesheet" 
+                href="style/style.css">
+
+    </head>
+    <body>
+        <div id="container">
+
+            <h1>Voxify</h1>
+
+            <select id="voices">
+                <option>Select a voice</option>
+            </select>
+
+            <label for="rate">Rate:</label>
+            <input id="rate" 
+                    type="range" 
+                    min="0" 
+                    max="3" 
+                    value="1">
+            <label for="pitch">Pitch</label>
+            <input id="pitch" 
+                    type="range" 
+                    min="0" 
+                    max="2" 
+                    value="1">
+            <textarea id="text">Welcome to crack the code</textarea>
+                
+            <div id="buttons">
+                <button id="stop">Stop</button>
+                <button id="speak">Speak</button>
+            </div>
+
+        </div>
+
+        <script src="scripts/script.js"></script>
+
+    </body>
+</html>
+
